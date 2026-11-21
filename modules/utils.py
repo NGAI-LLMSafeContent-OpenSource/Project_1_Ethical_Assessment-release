@@ -184,7 +184,9 @@ def prepare_swift_dataset(dataset: datasets.Dataset, output_jsonl_path: str, tex
 if __name__ == "__main__":
     pass
     # finetune_model_with_swift(
+    #     model_id_or_path="/home/sw/pt_models/GPT2-125M",
     #     dataset_path="output/detox_loop_1/swift_formatted_data.jsonl",
+    #     output_dir="/home/sw/gd-detox-sys/test/output/sft",
     #     task_type="causal_lm",
     #     train_type="full",
     #     use_chat_template=False,

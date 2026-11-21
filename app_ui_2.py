@@ -761,4 +761,4 @@ with gr.Blocks(title="二分类训练", theme=gr.themes.Soft()) as app:
 
 
 if __name__ == "__main__":
-    app.launch(server_name=os.getenv("APP_HOST", "127.0.0.1"), server_port=int(os.getenv("APP_PORT", "17891")), share=False)
+    app.launch(server_name="0.0.0.0", server_port=17891, share=False)

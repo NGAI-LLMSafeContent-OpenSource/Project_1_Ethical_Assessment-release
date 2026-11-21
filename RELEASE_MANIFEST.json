@@ -2,8 +2,9 @@
   "checks": {
     "commands": [
       [
-        "python3",
-        "tools/release_smoke.py"
+        "/data/fzk/env/published-runtime-audit/Project_1_Ethical_Assessment/bin/python",
+        "-B",
+        "tools/release_check.py"
       ]
     ],
     "passed": true
@@ -13,21 +14,33 @@
       "mode": "100644",
       "sha256": "9f8c740f85f967561954c26832ae49a461c6d4a15988a9c31c56b72115379289"
     },
+    "KNOWN_ISSUES.md": {
+      "mode": "100644",
+      "sha256": "82a6a96d3a5ff0cf275ea098576c6ebb0cf5eb8176215b5ecf9518f8dca108c1"
+    },
     "LICENSE": {
       "mode": "100644",
       "sha256": "bf09923210a8186467c43b56946a7726e95850c172077106038be441a40c5776"
     },
     "README.md": {
       "mode": "100644",
-      "sha256": "c9d5fca8aa2755f54e4112dd4ab780fe310b6039f269953258db2e463544543d"
+      "sha256": "9f0e519e1904f1113c974cef1d6bd67ab218d6a34713aa18b7ce34423867e2e6"
+    },
+    "RELEASE_FILES.md": {
+      "mode": "100644",
+      "sha256": "6bbd859482114be7cd18c2ba8aaa0dad1c63891eba22a25984ecf0e6e7aa8636"
+    },
+    "SOURCE_ALIGNMENT.json": {
+      "mode": "100644",
+      "sha256": "31780974a88d33ea80bfa529bf5453c444f223ca51bfd18690ecdaa7f9f78573"
     },
     "THIRD_PARTY_NOTICES.md": {
       "mode": "100644",
-      "sha256": "83757683bdafb39768a99db1f58a9bc48fab7b23b2d9c5fe207bf10c4ec4eeb0"
+      "sha256": "0579baec85cf07a6ace4adbbe965345b2e91a8d34304e4132031e7fea934226b"
     },
     "app_ui_2.py": {
       "mode": "100644",
-      "sha256": "5393c5a4637e70008f440c37669b51ebde3d22e9e018559e840a51fc0f0ec78d"
+      "sha256": "54f348a75505ed8254ec14fe95f13b36603f8d31a44d6c45c1d79c4aebc95ef3"
     },
     "do_detox.py": {
       "mode": "100644",
@@ -43,7 +56,11 @@
     },
     "modules/utils.py": {
       "mode": "100644",
-      "sha256": "598da88881ca1061d791b0bc7ba9ec1e884c9d1fdb31aa775236cee6cd6807f1"
+      "sha256": "64914480446cf693ee1858fb0abebdecd27623826adfeac0bbb8bbd364854f83"
+    },
+    "release_checks.json": {
+      "mode": "100644",
+      "sha256": "51a2b8ae43b49f098c485cd7eebfe0424d251c87147e29313a1e9053119e5720"
     },
     "requirements-training.txt": {
       "mode": "100644",
@@ -51,23 +68,15 @@
     },
     "requirements.txt": {
       "mode": "100644",
-      "sha256": "22c10624415fdfc1ae575b0c16a1d9121ce707961b0295fce11c02a8964684a1"
+      "sha256": "ea8f2f7771c0169f539bf691e806671c4ad098199ac7b8918be01e86c942813c"
     },
-    "tools/check_preprocess.py": {
+    "tools/release_check.py": {
       "mode": "100644",
-      "sha256": "5e6c4b21c0721b007d0d7348c003b592104617dc8aabf2d5e9348d151d497b4c"
-    },
-    "tools/release_smoke.json": {
-      "mode": "100644",
-      "sha256": "7d23eed2b503ca36e4bffa869fb6327c24fc2ed93f6c166386d66a3c42490607"
-    },
-    "tools/release_smoke.py": {
-      "mode": "100644",
-      "sha256": "faae08ff6ae764448a8ac6568041404e269775d58e4d37325a4f83ba62027392"
+      "sha256": "6b370aab6b096a1df48e44995198d6d46c0e54ac5f7cf371a327b8670264f5f0"
     }
   },
   "project": "NGAI-LLMSafeContent/Project_1_Ethical_Assessment",
   "schema": 1,
   "source_commit": "a9fe3944a18ad5c8aaae9e571dabda06a8821631",
-  "whitelist_sha256": "52b4180155600f13b44619eaa8f4b931863d009f1847c0bd390e18e088412e15"
+  "whitelist_sha256": "36debd60a01bd162e2018c14d8e7acb6acd178fdf723d5822b3613438b03c11a"
 }

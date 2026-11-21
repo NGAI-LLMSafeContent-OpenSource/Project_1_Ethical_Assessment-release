@@ -1,0 +1,33 @@
+{
+  "commands": [
+    {
+      "argv": [
+        "{python}",
+        "-c",
+        "import os,json,tempfile; from pathlib import Path; from app_ui_2 import _build_seqcls_dataset\nwith tempfile.TemporaryDirectory() as d:\n os.chdir(d); f=Path('input.jsonl'); f.write_text(''.join(json.dumps({'text':'neutral sample '+str(i),'label':i%2})+'\\n' for i in range(4))); output,summary=_build_seqcls_dataset(str(f),'text','label','1'); assert len(Path(output).read_text().splitlines())==4"
+      ],
+      "cwd": ".",
+      "name": "actual-preprocessing",
+      "timeout": 360
+    }
+  ],
+  "scope": "Pinned source byte/mode integrity, declared CPU/HTTP/frontend checks. Full model/GPU/data-dependent functionality is not implied. Upstream failures are preserved and separately documented.",
+  "servers": [
+    {
+      "argv": [
+        "{python}",
+        "-c",
+        "import app_ui_2; app_ui_2.app.launch(server_name=\"127.0.0.1\",server_port={port},share=False)"
+      ],
+      "checks": [
+        {
+          "path": "/"
+        }
+      ],
+      "cwd": ".",
+      "name": "gradio-http",
+      "ready": "/",
+      "startup_timeout": 120
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "policy": "Unmodified Git blob bytes for existing non-README runtime files; original defects retained. Release-only docs/configuration/examples are listed separately.",
+  "project": "NGAI-LLMSafeContent/Project_1_Ethical_Assessment",
+  "schema": 1,
+  "source_commit": "a9fe3944a18ad5c8aaae9e571dabda06a8821631",
+  "source_files": {
+    ".gitignore": {
+      "git_blob": "7aaae18f017fc7fae1d79db75b69eb4d6aa1824c",
+      "mode": "100644"
+    },
+    "app_ui_2.py": {
+      "git_blob": "e0c460220cdeedbc77031ca0ad6f6a4c4521304d",
+      "mode": "100644"
+    },
+    "do_detox.py": {
+      "git_blob": "f477837c0b6322d5f9e9811d7e6f557ef73cc734",
+      "mode": "100644"
+    },
+    "modules/diffs_funcs.py": {
+      "git_blob": "a36f6500ac32a62dac760ba571e6beb4103300b0",
+      "mode": "100644"
+    },
+    "modules/utils.py": {
+      "git_blob": "7da41cf4989b58eb3af978cd8c714054627fad1b",
+      "mode": "100644"
+    },
+    "requirements.txt": {
+      "git_blob": "19b81b8e31e459a3a8b30f8c93b03ed84290d52e",
+      "mode": "100644"
+    }
+  }
+}
